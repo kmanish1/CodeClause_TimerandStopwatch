@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F172A;
+}
+.container{
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 75vh;
+    /* flex-wrap: wrap; */
+    color:rgb(226 232 240);
+    /* color: rgb(219 39 119); */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+
+
+
+}
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    /* width: fit-content; */
+    height: 100%;
+    align-items: center;
+    border: 2px solid rgb(219 39 119);
+    border-radius: 1rem;
+    /* padding-bottom: 2rem; */
+    position: relative;    
+
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    /* width: fit-content; */
+    height: 100%;
+    align-items: center;
+    border: 2px solid rgb(219 39 119);
+    border-radius: 1rem;
+    /* padding-top: 2rem; */
+    position: relative;
+    /* top: 9rem; */
+    
+}
+.timer-time{
+    display: flex;
+    flex-direction: column;
+}
+.timer-minutes{
+    font-size: large;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+.timer-seconds{
+    font-size: large;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+.btn{
+    background-color: rgb(8 145 178);
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    font-size: large;
+    /* color: rgb(148 163 184); */
+    color:rgb(226 232 240);
+    border-radius: 0.3rem;
+    border: #0F172A;
+}
+.btn:hover{
+    background-color: rgb(219 39 119);
+}
+.digits{
+    font-size: xx-large;
+}
+@media only screen and (max-width: 900px){
+    .container{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        /* height: 75vh; */
+        /* flex-wrap: wrap; */
+        color:rgb(226 232 240);
+        /* color: rgb(219 39 119); */
+        /* padding-top: 2rem;
+        padding-bottom: 2rem; */
+        flex-direction: column;
+        position: relative;
+    }
+    .timer{
+        top: 6rem;
+    }
+    .stopwatch{
+        top: 3rem;
+    }
+}
